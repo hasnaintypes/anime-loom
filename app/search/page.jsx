@@ -61,5 +61,6 @@ export default function SearchPage() {
       </main>
       <Footer />
     </div>
+
   );
 }
