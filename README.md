@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AnimeLoom
 
-## Getting Started
+AnimeLoom is a modern, feature-rich anime discovery platform built with **React 18** and **Next.js**. This app showcases the latest and trending anime while providing a seamless and interactive user experience.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Latest Anime Updates**: Get the most recent anime releases and information.
+- **Trending Anime**: Discover what's popular in the anime world.
+- **User-Friendly Interface**: Built for speed and ease of use with Next.js's optimized performance.
+- **Dynamic Routing**: Navigate through anime categories, genres, and more effortlessly.
+
+---
+
+## Tech Stack
+
+- **Framework**: [Next.js 14+](https://nextjs.org/)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: Context API or Zustand (optional, depending on use case)
+- **Data Fetching**: Next.js's App Router and Server Components
+- **API**: [Jikan API](https://jikan.moe/) for fetching anime data
+
+---
+
+## Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/Nainee99/AnimeLoom.git
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd anime-loom
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## Scripts
+
+Here are some common scripts you can run:
+
+- **Development**: `npm run dev` - Starts the development server.
+- **Build**: `npm run build` - Creates an optimized production build.
+- **Start**: `npm start` - Starts the production server.
+- **Lint**: `npm run lint` - Runs ESLint checks on your code.
+
+---
+
+## Folder Structure
+
+```plaintext
+AnimeLoom/
+├── public/          # Static assets (images, icons, etc.)
+├── src/
+│   ├── app/        # Next.js App Router and pages
+│   ├── components/ # Reusable React components
+├── package.json    # Project dependencies and scripts
+├── next.config.js  # Next.js configuration
+└── tsconfig.json   # TypeScript configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## API Integration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+AnimeLoom uses the [Jikan API](https://jikan.moe/) to fetch data about anime. Below are some of the endpoints used:
 
-## Learn More
+- **Get Latest Anime**:
+  ```
+  GET https://api.jikan.moe/v4/anime
+  ```
+- **Search Anime**:
+  ```
+  GET https://api.jikan.moe/v4/anime?q={query}
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributions are welcome! To contribute:
 
-## Deploy on Vercel
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+## Acknowledgments
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Jikan API Documentation](https://jikan.moe/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+
+---
+
+### Stay Updated
+
+For updates and new features, follow this project on [GitHub](https://github.com/Nainee99/anime-loom).
